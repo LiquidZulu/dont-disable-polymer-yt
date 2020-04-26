@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Auto Old Reddit",
+  "version": "1.0",
+
+  "description": "Appends &disable_polymer=false to yt url",
+
+  "icons": {
+    "48": "icons/oldMain-48.png",
+    "96": "icons/oldMain-96.png",
+    "512": "icons/oldMain-512.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
